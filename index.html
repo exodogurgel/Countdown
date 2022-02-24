@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="modal">
+            <div class="content">
+                <img id="exit" src="images/close-modal.svg" alt="" />
+                <h1>Inform your name and e-mail</h1>
+                <p>to get to know more about it.</p>
+                <form action="">
+                    <label for="name" class="src-only">Name:</label>
+                    <input
+                        required
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Nome"
+                    />
+                    <label for="e-mail" class="src-only">E-mail:</label>
+                    <input
+                        title='Só aceitamos email do "gmail", "hotmail e "outlook" '
+                        pattern=".+@[a-z]+\.com"
+                        required
+                        type="email"
+                        name="e-mail"
+                        id="e-mail"
+                        placeholder="E-mail"
+                    />
+                    <input id="btn2" type="submit" value="Send" />
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <header></header>
+            <main>
+                <div class="timeAndInformations">
+                    <h1>READY TO LAUNCH IN...</h1>
+
+                    <div class="countdown-container">
+                        <div class="legend">
+                            <span id="legend-1">Dias</span>
+                            <div class="countdown days">
+                                <p class="text" id="days">00</p>
+                                <div class="dots">:</div>
+                            </div>
+                        </div>
+
+                        <div class="legend">
+                            <span id="legend-2">Horas</span>
+                            <div class="countdown hours">
+                                <p class="text" id="hours">00</p>
+                                <div class="dots">:</div>
+                            </div>
+                        </div>
+
+                        <div class="legend">
+                            <span id="legend-3">Minutos</span>
+                            <div class="countdown minutes">
+                                <p class="text" id="minutes">00</p>
+                                <div class="dots">:</div>
+                            </div>
+                        </div>
+
+                        <div class="legend">
+                            <span id="legend-4">Segundos</span>
+                            <div class="countdown seconds">
+                                <p class="text" id="seconds">00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <p id="subscribe">
+                            Inscreva-se para saber mais sobre o lançamento
+                        </p>
+                        <input id="btn" value="Inscreva-se" type="button" />
+                    </div>
+                </div>
+                <div class="rocket"></div>
+            </main>
+            <footer></footer>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
