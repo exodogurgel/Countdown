@@ -39,7 +39,7 @@ You can view the project layout through [desse link](https://exodogurgel.github.
 
 ## :memo: License
 
-This project is under the MIT license. See the file [LICENSE](.github/LICENSE.md) for more details.
+This project is under the MIT license. See the file [LICENSE](https://github.com/exodogurgel/Countdown/blob/main/LICENSE) for more details.
 
 ---
 
