@@ -1,90 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>sountdown</title>
-    </head>
-    <body>
-        <div class="modal">
-            <div class="content">
-                <img id="exit" src="images/close-modal.svg" alt="" />
-                <h1>Inform your name and e-mail</h1>
-                <p>to get to know more about it.</p>
-                <form action="">
-                    <label for="name" class="src-only">Name:</label>
-                    <input
-                        required
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Nome"
-                    />
-                    <label for="e-mail" class="src-only">E-mail:</label>
-                    <input
-                        title='Só aceitamos email do "gmail", "hotmail e "outlook" '
-                        pattern=".+@[a-z]+\.com"
-                        required
-                        type="email"
-                        name="e-mail"
-                        id="e-mail"
-                        placeholder="E-mail"
-                    />
-                    <input id="btn2" type="submit" value="Send" />
-                </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>sountdown</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="content">
+        <img id="exit" src="images/close-modal.svg" alt="" />
+        <h1>Inform your name and e-mail</h1>
+        <p>to get to know more about it.</p>
+        <form action="">
+          <label for="name" class="src-only">Name:</label>
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nome"
+          />
+          <label for="e-mail" class="src-only">E-mail:</label>
+          <input
+            title='Só aceitamos email do "gmail", "hotmail e "outlook" '
+            pattern=".+@[a-z]+\.com"
+            required
+            type="email"
+            name="e-mail"
+            id="e-mail"
+            placeholder="E-mail"
+          />
+          <input id="btn2" type="submit" value="Send" />
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <header></header>
+      <main>
+        <div class="timeAndInformations">
+          <h1>READY TO LAUNCH IN...</h1>
+
+          <div class="countdown-container">
+            <div class="wrapper">
+              <div class="countdown">
+                <span class="legend">Dias</span>
+                <p class="text" id="days"></p>
+              </div>
+              <div class="dots">:</div>
             </div>
+
+            <div class="wrapper">
+              <div class="countdown">
+                <span class="legend">Horas</span>
+                <p class="text" id="hours"></p>
+              </div>
+              <div class="dots">:</div>
+            </div>
+
+            <div class="wrapper">
+              <div class="countdown">
+                <span class="legend">Minutos</span>
+                <p class="text" id="minutes"></p>
+              </div>
+              <div class="dots">:</div>
+            </div>
+
+            <div class="wrapper">
+              <div class="countdown">
+                <span class="legend">Segundos</span>
+                <p class="text" id="seconds"></p>
+              </div>
+            </div>
+          </div>
+          <p id="subscribe">Inscreva-se para saber mais sobre o lançamento</p>
+          <input id="btn" value="Inscreva-se" type="button" />
         </div>
-        <div class="container">
-            <header></header>
-            <main>
-                <div class="timeAndInformations">
-                    <h1>READY TO LAUNCH IN...</h1>
-
-                    <div class="countdown-container">
-                        <div class="wrapper">
-                            <div class="countdown">
-                                <span class="legend">Dias</span>
-                                <p class="text" id="days">00</p>
-                            </div>
-                            <div class="dots">:</div>
-                        </div>
-
-                        <div class="wrapper">
-                            <div class="countdown">
-                                <span class="legend">Horas</span>
-                                <p class="text" id="hours">00</p>
-                            </div>
-                            <div class="dots">:</div>
-                        </div>
-
-                        <div class="wrapper">
-                            <div class="countdown">
-                                <span class="legend">Minutos</span>
-                                <p class="text" id="minutes">00</p>
-                            </div>
-                            <div class="dots">:</div>
-                        </div>
-
-                        <div class="wrapper">
-                            <div class="countdown">
-                                <span class="legend">Segundos</span>
-                                <p class="text" id="seconds">00</p>
-                            </div>
-                        </div>
-                    </div>
-                        <p id="subscribe">
-                            Inscreva-se para saber mais sobre o lançamento
-                        </p>
-                        <input id="btn" value="Inscreva-se" type="button" />
-                </div>
-                <div class="rocket">
-                    <img src="./images/rocket.svg" alt="desenho de um foguete no espaço">
-                </div>
-            </main>
-            <footer></footer>
+        <div class="rocket">
+          <img
+            src="./images/rocket.svg"
+            alt="desenho de um foguete no espaço"
+          />
         </div>
-        <script src="./script.js"></script>
-    </body>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
